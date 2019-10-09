@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-saw/tree/master/saw-program/static/css/main.5e4e9510.chunk.css",
-    "main.js": "/react-saw/tree/master/saw-program/static/js/main.ab7d5e14.chunk.js",
-    "main.js.map": "/react-saw/tree/master/saw-program/static/js/main.ab7d5e14.chunk.js.map",
-    "runtime-main.js": "/react-saw/tree/master/saw-program/static/js/runtime-main.7c7efa12.js",
-    "runtime-main.js.map": "/react-saw/tree/master/saw-program/static/js/runtime-main.7c7efa12.js.map",
-    "static/js/2.4a704c5d.chunk.js": "/react-saw/tree/master/saw-program/static/js/2.4a704c5d.chunk.js",
-    "static/js/2.4a704c5d.chunk.js.map": "/react-saw/tree/master/saw-program/static/js/2.4a704c5d.chunk.js.map",
-    "index.html": "/react-saw/tree/master/saw-program/index.html",
-    "precache-manifest.ce296e936e776905dd54dd6bd0441904.js": "/react-saw/tree/master/saw-program/precache-manifest.ce296e936e776905dd54dd6bd0441904.js",
-    "service-worker.js": "/react-saw/tree/master/saw-program/service-worker.js",
-    "static/css/main.5e4e9510.chunk.css.map": "/react-saw/tree/master/saw-program/static/css/main.5e4e9510.chunk.css.map",
-    "static/media/logo.svg": "/react-saw/tree/master/saw-program/static/media/logo.25bf045c.svg"
+    "main.css": "/react-saw/saw-program/static/css/main.5e4e9510.chunk.css",
+    "main.js": "/react-saw/saw-program/static/js/main.a071aaf5.chunk.js",
+    "main.js.map": "/react-saw/saw-program/static/js/main.a071aaf5.chunk.js.map",
+    "runtime-main.js": "/react-saw/saw-program/static/js/runtime-main.d2222522.js",
+    "runtime-main.js.map": "/react-saw/saw-program/static/js/runtime-main.d2222522.js.map",
+    "static/js/2.4a704c5d.chunk.js": "/react-saw/saw-program/static/js/2.4a704c5d.chunk.js",
+    "static/js/2.4a704c5d.chunk.js.map": "/react-saw/saw-program/static/js/2.4a704c5d.chunk.js.map",
+    "index.html": "/react-saw/saw-program/index.html",
+    "precache-manifest.b78a8879b3a574953e0b44f1afd89452.js": "/react-saw/saw-program/precache-manifest.b78a8879b3a574953e0b44f1afd89452.js",
+    "service-worker.js": "/react-saw/saw-program/service-worker.js",
+    "static/css/main.5e4e9510.chunk.css.map": "/react-saw/saw-program/static/css/main.5e4e9510.chunk.css.map",
+    "static/media/logo.svg": "/react-saw/saw-program/static/media/logo.25bf045c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7c7efa12.js",
+    "static/js/runtime-main.d2222522.js",
     "static/js/2.4a704c5d.chunk.js",
     "static/css/main.5e4e9510.chunk.css",
-    "static/js/main.ab7d5e14.chunk.js"
+    "static/js/main.a071aaf5.chunk.js"
   ]
 }
