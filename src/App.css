@@ -23,8 +23,14 @@
 
 .layout {
 	height: 100vh;
+}
+
+.chenar {
 	background: #6b8eba;
 	background: linear-gradient(45deg, rgb(19, 73, 95), #366092, #8da8c9, rgb(119, 211, 185));
+	padding: 1rem;
+	min-height: 70vh;
+	color: white;
 }
 
 #components-layout-demo-responsive .logo {

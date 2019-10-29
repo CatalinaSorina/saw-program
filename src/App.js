@@ -29,7 +29,7 @@ function App() {
 				<Route exact path="/register" component={Register} />
 			</nav>
 			<Content style={{ padding: '3rem' }}>
-				<div style={{ background: '#fff', padding: 24, minHeight: 280 }}>Program SAW & PIPES</div>
+				<div className="chenar">Program SAW & PIPES</div>
 			</Content>
 			<Footer style={{ textAlign: 'center' }}>Saw & Pipes @2019</Footer>
 		</Layout>
