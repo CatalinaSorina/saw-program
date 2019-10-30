@@ -1,8 +1,8 @@
 import React from 'react';
-import './App.css';
-import Login from './App/components/menu/Login';
-import Register from './App/components/menu/Register';
-import ChangePass from './App/components/menu/ChangePass';
+import './styles/App.css';
+import Login from './components/menu/Login';
+import Register from './components/menu/Register';
+import ChangePass from './components/menu/ChangePass';
 import { Route, NavLink } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
 
@@ -10,11 +10,11 @@ const { Header, Content, Footer } = Layout;
 
 class App extends React.Component {
 	state = {
-		logged: false
+		username: null
 	};
 
 	render() {
-		return !this.state.logged ? (
+		return !this.state.username ? (
 			<Layout className="layout">
 				<Header>
 					<div className="logo" />
@@ -58,7 +58,7 @@ class App extends React.Component {
 					<Route exact path="/register" component={Register} />
 				</nav>
 				<Content />
-				<Footer style={{ textAlign: 'center' }}>Saw & Pipes @2019</Footer>
+				<Footer style={{ textAlign: 'center' }}>{this.state.username}</Footer>
 			</Layout>
 		);
 	}

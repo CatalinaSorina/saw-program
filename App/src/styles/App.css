@@ -43,11 +43,15 @@
 
 .ant-menu {
 	background: transparent;
-	visibility: hidden;
 }
 
-.ant-layout-header:hover .ant-menu {
+.ant-layout-header:hover .ant-menu-item {
 	visibility: visible;
+}
+
+.ant-menu-item {
+	float: right;
+	visibility: hidden;
 }
 
 .ant-menu a.active {
@@ -62,6 +66,9 @@
 	background: rgb(245, 211, 130);
 	box-shadow: 0 0 0.5rem 0 black;
 	border-radius: 0 0 1rem 1rem;
+	margin: 0 1rem 0 1rem;
+	float: left;
+	visibility: visible;
 }
 
 .ant-layout-content {

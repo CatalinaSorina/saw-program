@@ -1,6 +1,6 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import './menu.css';
+import '../../styles/menu.css';
 import { Form, Icon, Input, Button } from 'antd';
 
 function hasErrors(fieldsError) {
@@ -28,6 +28,7 @@ class Register extends React.Component {
 		// Only show error after a field is touched.
 		const usernameError = isFieldTouched('username') && getFieldError('username');
 		const passwordError = isFieldTouched('password') && getFieldError('password');
+		const brandError = isFieldTouched('brand') && getFieldError('brand');
 		const tipError = isFieldTouched('tip') && getFieldError('tip');
 		return (
 			<Form layout="inline" onSubmit={this.handleSubmit}>
@@ -52,6 +53,17 @@ class Register extends React.Component {
 						/>
 					)}
 				</Form.Item>
+				<Form.Item validateStatus={brandError ? 'error' : ''} help={brandError || ''}>
+					{getFieldDecorator('brand', {
+						rules: [ { required: true, message: 'Marcă:' } ]
+					})(
+						<Input
+							prefix={<Icon type="number" style={{ color: 'rgba(0,0,0,.25)' }} />}
+							type="brand"
+							placeholder="Număr de marcă"
+						/>
+					)}
+				</Form.Item>
 				<Form.Item validateStatus={tipError ? 'error' : ''} help={tipError || ''}>
 					{getFieldDecorator('tip', {
 						rules: [ { required: true, message: 'Scrie ceva care să te ajute să îți amintești parola:' } ]
@@ -59,7 +71,7 @@ class Register extends React.Component {
 						<Input
 							prefix={<Icon type="bulb" style={{ color: 'rgba(0,0,0,.25)' }} />}
 							type="tip"
-							placeholder="ex: anu nașterii"
+							placeholder="Sugestie parolă"
 						/>
 					)}
 				</Form.Item>
