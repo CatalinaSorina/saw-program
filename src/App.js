@@ -14,13 +14,13 @@ function App() {
 				<div className="logo" />
 				<Menu theme="dark" mode="horizontal" defaultSelectedKeys={[ '1' ]} style={{ lineHeight: '64px' }}>
 					<Menu.Item key="1">
-						<NavLink to="/">Acasa</NavLink>
+						<NavLink to="/">Acas&#259;</NavLink>
 					</Menu.Item>
 					<Menu.Item key="2">
-						<NavLink to="/login">Log in</NavLink>
+						<NavLink to="/login">Logare</NavLink>
 					</Menu.Item>
 					<Menu.Item key="3">
-						<NavLink to="/register">Inregistrare</NavLink>
+						<NavLink to="/register">&#206;nregistrare</NavLink>
 					</Menu.Item>
 				</Menu>
 			</Header>
@@ -28,9 +28,7 @@ function App() {
 				<Route exact path="/login" component={Login} />
 				<Route exact path="/register" component={Register} />
 			</nav>
-			<Content style={{ padding: '3rem' }}>
-				<div className="chenar">Program SAW & PIPES</div>
-			</Content>
+			<Content />
 			<Footer style={{ textAlign: 'center' }}>Saw & Pipes @2019</Footer>
 		</Layout>
 	);

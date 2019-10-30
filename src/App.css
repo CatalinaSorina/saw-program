@@ -23,14 +23,71 @@
 
 .layout {
 	height: 100vh;
+	padding: 3rem;
 }
 
-.chenar {
+.ant-layout-header {
 	background: #6b8eba;
-	background: linear-gradient(45deg, rgb(19, 73, 95), #366092, #8da8c9, rgb(119, 211, 185));
+	background: linear-gradient(
+		45deg,
+		rgb(19, 73, 95),
+		#366092,
+		#8da8c9,
+		rgb(245, 211, 130),
+		#8da8c9,
+		#366092,
+		rgb(19, 73, 95)
+	);
+	box-shadow: 0 0 0.4rem 0 black;
+}
+
+.ant-menu {
+	background: transparent;
+	visibility: hidden;
+}
+
+.ant-layout-header:hover .ant-menu {
+	visibility: visible;
+}
+
+.ant-menu a.active {
+	color: rgb(19, 73, 95);
+}
+
+.ant-menu a.active:hover {
+	color: rgb(26, 26, 26);
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected {
+	background: rgb(245, 211, 130);
+	box-shadow: 0 0 0.5rem 0 black;
+	border-radius: 0 0 1rem 1rem;
+}
+
+.ant-layout-content {
+	background: transparent;
+	box-shadow: 0 0 0.2rem 0 black;
+}
+
+.ant-layout {
+	background: #6b8eba;
+	background: linear-gradient(0deg, rgb(19, 73, 95), #366092, #8da8c9, rgb(245, 211, 130));
 	padding: 1rem;
 	min-height: 70vh;
-	color: white;
+}
+
+.ant-layout-footer {
+	background: linear-gradient(
+		45deg,
+		rgb(19, 73, 95),
+		#366092,
+		#8da8c9,
+		rgb(245, 211, 130),
+		#8da8c9,
+		#366092,
+		rgb(19, 73, 95)
+	);
+	box-shadow: 0 0 0.2rem 0 black;
 }
 
 #components-layout-demo-responsive .logo {

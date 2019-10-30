@@ -27,6 +27,7 @@ class Register extends React.Component {
 		// Only show error after a field is touched.
 		const usernameError = isFieldTouched('username') && getFieldError('username');
 		const passwordError = isFieldTouched('password') && getFieldError('password');
+		const tipError = isFieldTouched('tip') && getFieldError('tip');
 		return (
 			<Form layout="inline" onSubmit={this.handleSubmit}>
 				<Form.Item validateStatus={usernameError ? 'error' : ''} help={usernameError || ''}>
@@ -41,29 +42,29 @@ class Register extends React.Component {
 				</Form.Item>
 				<Form.Item validateStatus={passwordError ? 'error' : ''} help={passwordError || ''}>
 					{getFieldDecorator('password', {
-						rules: [ { required: true, message: 'Scrie o parola!' } ]
+						rules: [ { required: true, message: 'Scrie o parolă!' } ]
 					})(
 						<Input
 							prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
 							type="password"
-							placeholder="Parola"
+							placeholder="Parolă"
 						/>
 					)}
 				</Form.Item>
-				<Form.Item validateStatus="" help="">
+				<Form.Item validateStatus={tipError ? 'error' : ''} help={tipError || ''}>
 					{getFieldDecorator('tip', {
-						rules: [ { required: true, message: 'Scrie ceva care sa te ajute sa iti amintesti parola:' } ]
+						rules: [ { required: true, message: 'Scrie ceva care să te ajute să îți amintești parola:' } ]
 					})(
 						<Input
 							prefix={<Icon type="bulb" style={{ color: 'rgba(0,0,0,.25)' }} />}
 							type="tip"
-							placeholder="ex: anu nasterii"
+							placeholder="ex: anu nașterii"
 						/>
 					)}
 				</Form.Item>
 				<Form.Item>
 					<Button type="primary" htmlType="submit" disabled={hasErrors(getFieldsError())}>
-						Inregistrare
+						&#206;nregistrare
 					</Button>
 				</Form.Item>
 			</Form>

@@ -41,18 +41,18 @@ class Login extends React.Component {
 				</Form.Item>
 				<Form.Item validateStatus={passwordError ? 'error' : ''} help={passwordError || ''}>
 					{getFieldDecorator('password', {
-						rules: [ { required: true, message: 'Scrie o parola!' } ]
+						rules: [ { required: true, message: 'Scrie o parolă!' } ]
 					})(
 						<Input
 							prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
 							type="password"
-							placeholder="Parola"
+							placeholder="Parolă"
 						/>
 					)}
 				</Form.Item>
 				<Form.Item>
 					<Button type="primary" htmlType="submit" disabled={hasErrors(getFieldsError())}>
-						Log in
+						Logare
 					</Button>
 				</Form.Item>
 			</Form>
