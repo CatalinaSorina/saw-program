@@ -1,0 +1,13 @@
+.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
+	border-color: rgb(19, 73, 95);
+}
+
+.ant-input:not(.ant-input-disabled) {
+	border-color: transparent;
+	box-shadow: 0 0 0.3rem 0 rgb(19, 73, 95);
+}
+
+.ant-btn-primary {
+	background-color: rgb(19, 73, 95);
+	border-color: rgb(19, 73, 95);
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import 'antd/dist/antd.css';
+import './menu.css';
 import { Form, Icon, Input, Button } from 'antd';
 
 function hasErrors(fieldsError) {
